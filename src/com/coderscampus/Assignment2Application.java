@@ -7,4 +7,7 @@ public class Assignment2Application {
 
 	}
 
+	// Generate a random number
+	// Read user input
+	
 }
