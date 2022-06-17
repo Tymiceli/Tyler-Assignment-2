@@ -22,7 +22,7 @@ public class Assignment2Application {
 
 			x = random.nextInt(100) + 1;
 
-			for (int attempts = 0; attempts < 8; attempts++) {
+			for (int attempts = 0; attempts < 5; attempts++) {
 
 				guess = sc.nextInt();
 
@@ -38,7 +38,7 @@ public class Assignment2Application {
 						System.out.println("Please pick a higher number");
 					}
 				}
-				if (attempts == 7) {
+				if (attempts == 4) {
 					System.out.println("You lose! The number to guess was " + x);
 					answerGuess = true;
 					break;
