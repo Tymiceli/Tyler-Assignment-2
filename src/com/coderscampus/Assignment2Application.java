@@ -21,7 +21,7 @@ public class Assignment2Application {
 		while (!answerGuess) {
 
 			x = random.nextInt(100) + 1;
-
+			
 			for (int attempts = 0; attempts < 5; attempts++) {
 
 				guess = sc.nextInt();
@@ -34,11 +34,12 @@ public class Assignment2Application {
 
 					if (guess > x && guess >= 1 && guess <= 100) {
 						System.out.println("Please pick a lower number");
-					} else if (guess < x && guess >= 1 && guess <= 100) {
+					}
+					if (guess < x && guess >= 1 && guess <= 100) {
 						System.out.println("Please pick a higher number");
 					}
 				}
-				if (attempts == 4) {
+				if (attempts == 4 && guess != x) {
 					System.out.println("You lose! The number to guess was " + x);
 					answerGuess = true;
 					break;
