@@ -21,7 +21,7 @@ public class Assignment2Application {
 		while (!answerGuess) {
 
 			x = random.nextInt(100) + 1;
-			
+						
 			for (int attempts = 0; attempts < 5; attempts++) {
 
 				guess = sc.nextInt();
